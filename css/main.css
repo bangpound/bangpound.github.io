@@ -2,37 +2,54 @@ html {
   font-size: 100%;
   line-height: 1.5em; }
 
-body {
+.page {
+  margin: 24px;
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
-  font-family: sans-serif; }
-  body:after {
+  background-color: #eee; }
+  .page:after {
     content: " ";
     display: block;
     clear: both; }
 
-nav ul {
+.page__header,
+.page__main,
+.page__footer {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.94118%;
+  padding-right: 2.94118%;
+  background-color: white; }
+
+body {
+  font-family: sans-serif; }
+
+.main-menu__list {
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden; }
-  nav ul li {
+  .main-menu__list li {
     list-style-image: none;
     list-style-type: none;
     margin-left: 0;
     white-space: nowrap;
     float: left;
-    padding-left: 4px;
-    padding-right: 4px; }
-    nav ul li:first-child {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .main-menu__list li:first-child {
       padding-left: 0; }
-    nav ul li:last-child {
+    .main-menu__list li:last-child {
       padding-opposite-position(left): 0; }
-  nav ul a {
-    text-decoration: none; }
-    nav ul a:hover, nav ul a:focus {
-      text-decoration: underline; }
+
+.main-menu__link {
+  text-decoration: none; }
+  .main-menu__link:hover, .main-menu__link:focus {
+    text-decoration: underline; }
 
 img {
   max-width: 100%; }
