@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[!&amp;#]]></title>
+    <link href="/atom.xml" rel="self"/>
+    <link href="/"/>
+    <updated>2015-06-22T20:55:50-05:00</updated>
+    <id>/</id>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Cube]]></title>
+            <link href="/blog/1969/12/31/_posts/2015-6-22-cube.md"/>
+            <updated>2015-06-22T20:55:50-05:00</updated>
+            <id>/blog/1969/12/31/_posts/2015-6-22-cube.md</id>
+            <content type="html"><![CDATA[<p><img src="/images/tumblr_nq5yddDasX1r2geqjo1_540.gif" /></p>
+]]></content>
+        </entry>
+    </feed>
