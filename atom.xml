@@ -3,7 +3,7 @@
     <title><![CDATA[!&amp;#]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2015-06-23T13:38:10-05:00</updated>
+    <updated>2015-06-23T13:54:31-05:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -11,7 +11,7 @@
             <link href="/blog/2015/06/22/cube"/>
             <updated>2015-06-22T00:00:00-05:00</updated>
             <id>/blog/2015/06/22/cube</id>
-            <content type="html"><![CDATA[<p><img src="/images/tumblr_nq5yddDasX1r2geqjo1_540.gif" /></p>
+            <content type="html"><![CDATA[<p><img src="/images/tumblr_nq5yddDasX1r2geqjo1_540.gif" alt="cube" /></p>
 ]]></content>
         </entry>
     </feed>
