@@ -1,31 +1,41 @@
 @import "susy";
-@import "compass";
+@import "compass/typography/links/hover-link";
+@import "compass/typography/lists/horizontal-list";
+@import "compass/typography/vertical_rhythm";
 
 $susy: (
-  columns: 2,
-  gutters: 1/4,
+  columns: 1,
+  gutters: 1/16,
   math: fluid,
-  output: float,
+  output: isolate,
   gutter-position: inside,
 );
 
 @include establish-baseline;
 
-body {
+.page {
+  margin: 24px;
   @include container(40rem);
+  background-color: #eee;
+}
+
+.page__header,
+.page__main,
+.page__footer {
+  @include span(1);
+  background-color: white;
+}
+
+body {
   font-family: sans-serif;
 }
 
-h1 {
+.main-menu__list {
+  @include horizontal-list(1rem);
 }
 
-nav {
-  ul {
-    @include horizontal-list();
-    a {
-      @include hover-link;
-    }
-  }
+.main-menu__link {
+  @include hover-link;
 }
 
 img {

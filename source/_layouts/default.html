@@ -22,19 +22,21 @@
     {% block head_scripts %}
     {% endblock %}
 </head>
-<body>
-<header>
-    <h1><a href="{{ site.url }}/">{{ site.title }}</a></h1>
-    <nav>
-        <ul>
-            <li><a href="{{ site.url }}/blog">Posts Archive</a></li>
-            <li><a href="{{ site.url }}/about">About</a></li>
+<body class="page">
+<header class="page__header">
+    <h1 class="site-name"><a href="{{ site.url }}/">{{ site.title }}</a></h1>
+    <nav class="main-menu">
+        <ul class="main-menu__list">
+            <li><a href="{{ site.url }}/about" class="main-menu__link">About</a></li>
+            <li><a href="{{ site.url }}/blog" class="main-menu__link">Blog</a></li>
         </ul>
     </nav>
 </header>
-{% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-<footer>
-    &copy; {{ "now"|date("Y") }} {{ site.title }}
+<main class="page__main">
+    {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+</main>
+<footer class="page__footer">
+    <p>&copy; {{ "now"|date("Y") }} Benjamin J Doherty</p>
 </footer>
 
 {% block scripts %}
