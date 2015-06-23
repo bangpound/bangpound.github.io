@@ -7,6 +7,13 @@ pagination:
 use:
     - posts
 ---
+{% block head_meta %}
+{{ parent() }}
+<link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud">
+<link rel="openid2.local_id" href="https://profiles.google.com/bangpound">
+{% endblock %}
+
+{% block content %}
 {% for post in page.pagination.items %}
     <article>
         <header>
@@ -29,3 +36,4 @@ use:
         {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
     </nav>
 {% endif %}
+{% endblock %}
