@@ -11,6 +11,6 @@
   ],
   "dependencies": {
     "susy": "~2.2.5",
-    "compass": "Compass/compass#1.0.3"
+    "compass": "Compass/compass#stable"
   }
 }
