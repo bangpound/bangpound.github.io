@@ -1,0 +1,16 @@
+{
+  "name": "bangpound.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bangpound/bangpound.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.5",
+    "compass": "Compass/compass#1.0.3"
+  }
+}

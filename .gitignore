@@ -6,3 +6,6 @@
 /output_*/
 /source/components/
 s3.conf
+/bower_components/
+/.sass-cache
+/source/css

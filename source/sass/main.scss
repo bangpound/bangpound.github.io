@@ -1,0 +1,33 @@
+@import "susy";
+@import "compass";
+
+$susy: (
+  columns: 2,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+@include establish-baseline;
+
+body {
+  @include container(40rem);
+  font-family: sans-serif;
+}
+
+h1 {
+}
+
+nav {
+  ul {
+    @include horizontal-list();
+    a {
+      @include hover-link;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}
