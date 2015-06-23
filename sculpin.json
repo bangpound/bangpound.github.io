@@ -14,5 +14,10 @@
             "email": "beau@dflydev.com",
             "homepage": "http://beausimensen.com"
         }
-    ]
+    ],
+    "scripts": {
+        "sass:compile": [
+            "sass -I bower_components/compass/core/stylesheets -I bower_components/susy/sass --update source/sass:source/css"
+        ]
+    }
 }
