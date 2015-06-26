@@ -1,41 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Home &mdash; !&amp;# &mdash; bangpound</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="noindex, follow">
-    
-<link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud">
-<link rel="openid2.local_id" href="https://profiles.google.com/bangpound">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-
-    <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="!&amp;# activity feed" />
-    <link rel="stylesheet" href="/css/main.css">
-                </head>
-<body class="page__wrapper">
-<div class="page">
-    <header class="page__header">
-        <h1 class="site-name"><a href="/">!&amp;#</a></h1>
-        <nav class="main-menu">
-            <ul class="main-menu__list">
-                <li><a href="/about" class="main-menu__link">About</a></li>
-                <li><a href="/blog" class="main-menu__link">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="page__main">
-            <article>
-        <header>
-            <h2><a href="/blog/2015/06/25/guzzle-6-logging">Guzzle 6 Logging</a></h2>
-        </header>
-        <p>The <a href="https://github.com/guzzle/guzzle/releases/tag/6.0.0">latest version of Guzzle</a> uses PSR-7. Functionality that
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[!&amp;#]]></title>
+    <link href="/blog/tags/Symfony.xml" rel="self"/>
+    <link href="/"/>
+    <updated>2015-06-26T07:39:12-05:00</updated>
+    <id>/</id>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Guzzle 6 Logging]]></title>
+            <link href="/blog/2015/06/25/guzzle-6-logging"/>
+            <updated>2015-06-25T00:00:00-05:00</updated>
+            <id>/blog/2015/06/25/guzzle-6-logging</id>
+            <content type="html"><![CDATA[<p>The <a href="https://github.com/guzzle/guzzle/releases/tag/6.0.0">latest version of Guzzle</a> uses PSR-7. Functionality that
 previously was based on events is now implemented as middleware. The <a href="https://github.com/guzzle/log-subscriber">log subscriber</a>
 is not supported, and the logging middleware is part of the main Guzzle package.</p>
 
@@ -104,25 +80,6 @@ class appDevDebugProjectContainer extends Container
 without using a factory? The trick is not only to create the service without a factory, because if the service is
 constructed entirely within the container, it could be configured or extended with container extensions and compiler
 passes.</p>
-
-                    <p class="tags">
-            Tags:
-                        <a href="/blog/tags/PHP">PHP</a>,                         <a href="/blog/tags/Guzzle">Guzzle</a>,                         <a href="/blog/tags/Symfony">Symfony</a>                        </p>
-            </article>
-    <article>
-        <header>
-            <h2><a href="/blog/2015/06/22/cube">Cube</a></h2>
-        </header>
-        <p><img src="/images/tumblr_nq5yddDasX1r2geqjo1_540.gif" alt="cube" /></p>
-
-            </article>
-    </main>
-    <footer class="page__footer">
-        <p>&copy; 2015 Benjamin J Doherty</p>
-    </footer>
-</div>
-
-
-<script src="/js/prism.min.js"></script>
-</body>
-</html>
+]]></content>
+        </entry>
+    </feed>
