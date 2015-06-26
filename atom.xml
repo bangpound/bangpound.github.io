@@ -3,9 +3,17 @@
     <title><![CDATA[!&amp;#]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2015-06-26T11:24:49-05:00</updated>
+    <updated>2015-06-26T14:25:01-05:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Genet]]></title>
+            <link href="/blog/2015/06/26/genet"/>
+            <updated>2015-06-26T00:00:00-05:00</updated>
+            <id>/blog/2015/06/26/genet</id>
+            <content type="html"><![CDATA[<p><iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F4769870&url=https%3A%2F%2Fvimeo.com%2F4769870&image=http%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F13016232_295x166.jpg&key=3b031517f96241338a3c356ab63f3ced&type=text%2Fhtml&schema=vimeo" width="480" height="368" scrolling="no" frameborder="0" allowfullscreen></iframe></p>
+]]></content>
+        </entry>
             <entry>
             <title type="html"><![CDATA[Guzzle 6 Logging with Symfony: what&#039;s the right way to create a callback service?]]></title>
             <link href="/blog/2015/06/25/guzzle-6-logging-with-symfony-whats-the-right-way-to-create-a-callback-service"/>
