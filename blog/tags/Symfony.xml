@@ -3,7 +3,7 @@
     <title><![CDATA[!&amp;#]]></title>
     <link href="/blog/tags/Symfony.xml" rel="self"/>
     <link href="/"/>
-    <updated>2015-06-26T07:39:12-05:00</updated>
+    <updated>2015-06-26T07:43:04-05:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -66,8 +66,10 @@ class appDevDebugProjectContainer extends Container
     protected function getGuzzleService()
     {
         $a = \GuzzleHttp\HandlerStack::create();
-        $a-&gt;push(\GuzzleHttp\Middleware::log($this-&gt;get('logger'),
-            new \GuzzleHttp\MessageFormatter()));
+        $a-&gt;push(\GuzzleHttp\Middleware::log(
+            $this-&gt;get('logger'),
+            new \GuzzleHttp\MessageFormatter()
+        ));
 
         return $this-&gt;services['guzzle'] = new \GuzzleHttp\Client(array(
             'stack' =&gt; $a
