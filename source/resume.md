@@ -7,7 +7,7 @@ title: Resume
 
 ## senior web manufacturer
 
-### Profile {#profile}
+### Profile
 
 Experienced web developer with expertise in Drupal, PHP and web standards. Mostly a coder but occasionally a designer of information architecture and marketing strategies. Very familiar with automation and virtualization.
 
@@ -15,7 +15,7 @@ Specialist in helping organizations assess their information/technology needs fr
 
 Familiar with social issues, nonprofit organizations, social services, children's services, social activism, and cultural programs.
 
-### Technical {#technical}
+### Technical
 
 Listed tools and skills are those where I have expert-level proficiency and up-to-date experience.
 
@@ -52,7 +52,7 @@ Listed tools and skills are those where I have expert-level proficiency and up-t
   1. [CouchDB](http://couchdb.apache.org)
   1. [MySQL](http://www.mysql.com)
 
-### Experience {#experience}
+### Experience
 
 Self-employed
 : *independent web developer*
@@ -89,7 +89,7 @@ University of Chicago Library
   __January 2000-March 2005__
   Supervise student employees and train them in various library processes, such as circulation of materials and technical services. Assist Masters- and Ph.D.-level social work students with research. Resolve disputes between patrons and the Library.
 
-### Projects {#projects}
+### Projects
 
 Drufony
 : <http://drufony.github.io>
