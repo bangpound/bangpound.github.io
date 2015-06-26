@@ -24,9 +24,6 @@ html {
 }
 
 .page {
-  max-width: $container-width;
-  margin-left: auto;
-  margin-right: auto;
   @include container;
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
   min-height: 100vh;
