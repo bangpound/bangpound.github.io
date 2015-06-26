@@ -24,7 +24,7 @@ html {
 }
 
 .page {
-  width: $container-width;
+  max-width: $container-width;
   margin-left: auto;
   margin-right: auto;
   @include container;
