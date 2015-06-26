@@ -3,31 +3,49 @@
 @import "compass/typography/lists/horizontal-list";
 @import "compass/typography/vertical_rhythm";
 
+$container-width: 40rem;
+$gutter-width: 1.5rem;
+$rhythm-unit: "rem";
+$rem-with-px-fallback: false;
+
 $susy: (
+  container: $container-width - (2 * $gutter-width),
   columns: 1,
-  gutters: 1/16,
+  column-width: $container-width,
+  gutters:  $gutter-width / $container-width,
   math: fluid,
-  output: isolate,
-  gutter-position: inside,
+  gutter-position: inside-static,
 );
 
 @include establish-baseline;
 
-.page {
-  margin: 24px;
-  @include container(40rem);
+html {
   background-color: #eee;
+}
+
+.page {
+  width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  @include container;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: white;
 }
 
 .page__header,
 .page__main,
 .page__footer {
   @include span(1);
-  background-color: white;
+  padding-left: $gutter-width;
+  padding-right: $gutter-width;
 }
 
 body {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .main-menu__list {
