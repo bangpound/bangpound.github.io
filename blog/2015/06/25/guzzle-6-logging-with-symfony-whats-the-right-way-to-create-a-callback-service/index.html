@@ -99,7 +99,7 @@ class appDevDebugProjectContainer extends Container
 </code></pre>
 
 <p>Given that Symfony services must be objects with classes, what is the right way to create a service with callbacks
-without using a factory? The trick is not only to create the service without a factory, because if the service is
+without using a factory? The trick is to create the service without a factory, because if the service is
 constructed entirely within the container, it could be configured or extended with container extensions and compiler
 passes.</p>
 

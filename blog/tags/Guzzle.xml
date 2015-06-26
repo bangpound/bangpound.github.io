@@ -3,7 +3,7 @@
     <title><![CDATA[!&amp;#]]></title>
     <link href="/blog/tags/Guzzle.xml" rel="self"/>
     <link href="/"/>
-    <updated>2015-06-26T09:13:58-05:00</updated>
+    <updated>2015-06-26T11:24:49-05:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -78,7 +78,7 @@ class appDevDebugProjectContainer extends Container
 </code></pre>
 
 <p>Given that Symfony services must be objects with classes, what is the right way to create a service with callbacks
-without using a factory? The trick is not only to create the service without a factory, because if the service is
+without using a factory? The trick is to create the service without a factory, because if the service is
 constructed entirely within the container, it could be configured or extended with container extensions and compiler
 passes.</p>
 ]]></content>
