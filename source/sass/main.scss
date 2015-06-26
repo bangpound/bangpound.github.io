@@ -59,3 +59,9 @@ body {
 img {
   max-width: 100%;
 }
+
+@import "prism-okaidia";
+
+pre[class*="language-"] {
+  @include adjust-font-size-to(12px, .5);
+}
