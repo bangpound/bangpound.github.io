@@ -3,7 +3,7 @@
     <title><![CDATA[!&amp;#]]></title>
     <link href="/blog/tags/Guzzle.xml" rel="self"/>
     <link href="/"/>
-    <updated>2015-06-26T07:48:02-05:00</updated>
+    <updated>2015-06-26T09:13:58-05:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -51,8 +51,7 @@ services:
 <p>On the <code>guzzle.logger</code> service, the <code>callback</code> class is actually invalid, but without a class, it complains:</p>
 
 <blockquote>
-<p>[Symfony\Component\DependencyInjection\Exception\RuntimeException]
-Please add the class to service &quot;guzzle.logger&quot; even if it is constructed by a factory since we might need to add method calls based on compile-time checks.</p>
+<p>[Symfony\Component\DependencyInjection\Exception\RuntimeException] Please add the class to service &quot;guzzle.logger&quot; even if it is constructed by a factory since we might need to add method calls based on compile-time checks.</p>
 </blockquote>
 
 <p>Nonetheless, when the dependencies are not public, Symfony compiles the Guzzle client service with a logger correctly.</p>

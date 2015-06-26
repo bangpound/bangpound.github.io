@@ -14,7 +14,6 @@ html {
   margin-right: auto;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.75);
   min-height: 100vh;
-  flex-direction: column;
   background-color: white; }
   .page:after {
     content: " ";
@@ -32,7 +31,8 @@ html {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-left: 1.5rem;
-  padding-right: 1.5rem; }
+  padding-right: 1.5rem;
+  overflow: hidden; }
 
 body {
   font-family: sans-serif;
@@ -174,3 +174,5 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   font-size: 0.75rem;
   line-height: 0.75rem; }
+
+/*# sourceMappingURL=main.css.map */
