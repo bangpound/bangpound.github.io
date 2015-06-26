@@ -7,7 +7,7 @@
     <priority>0.8</priority>
   </url>
     <url>
-    <loc>/blog/2015/06/25/guzzle-6-logging</loc>
+    <loc>/blog/2015/06/25/guzzle-6-logging-with-symfony-whats-the-right-way-to-create-a-callback-service</loc>
     <lastmod>2015-06-25T00:00:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>

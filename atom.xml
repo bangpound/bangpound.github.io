@@ -3,14 +3,14 @@
     <title><![CDATA[!&amp;#]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2015-06-26T07:43:04-05:00</updated>
+    <updated>2015-06-26T07:48:02-05:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
-            <title type="html"><![CDATA[Guzzle 6 Logging]]></title>
-            <link href="/blog/2015/06/25/guzzle-6-logging"/>
+            <title type="html"><![CDATA[Guzzle 6 Logging with Symfony: what&#039;s the right way to create a callback service?]]></title>
+            <link href="/blog/2015/06/25/guzzle-6-logging-with-symfony-whats-the-right-way-to-create-a-callback-service"/>
             <updated>2015-06-25T00:00:00-05:00</updated>
-            <id>/blog/2015/06/25/guzzle-6-logging</id>
+            <id>/blog/2015/06/25/guzzle-6-logging-with-symfony-whats-the-right-way-to-create-a-callback-service</id>
             <content type="html"><![CDATA[<p>The <a href="https://github.com/guzzle/guzzle/releases/tag/6.0.0">latest version of Guzzle</a> uses PSR-7. Functionality that
 previously was based on events is now implemented as middleware. The <a href="https://github.com/guzzle/log-subscriber">log subscriber</a>
 is not supported, and the logging middleware is part of the main Guzzle package.</p>
