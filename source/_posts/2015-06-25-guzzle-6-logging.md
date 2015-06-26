@@ -1,5 +1,5 @@
 ---
-title: Guzzle 6 Logging
+title: Guzzle 6 Logging with Symfony: what's the right way to create a callback service?
 categories:
     - PHP
 tags:
@@ -76,6 +76,6 @@ class appDevDebugProjectContainer extends Container
 ```
 
 Given that Symfony services must be objects with classes, what is the right way to create a service with callbacks
-without using a factory? The trick is not only to create the service without a factory, because if the service is
+without using a factory? The trick is to create the service without a factory, because if the service is
 constructed entirely within the container, it could be configured or extended with container extensions and compiler
 passes.
