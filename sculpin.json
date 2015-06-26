@@ -15,6 +15,9 @@
             "homepage": "http://beausimensen.com"
         }
     ],
+    "require": {
+        "bcremer/sculpin-commonmark-bundle": "~0.2"
+    },
     "scripts": {
         "sass:compile": [
             "sass -I bower_components/compass/core/stylesheets -I bower_components/susy/sass --update source/sass:source/css"
