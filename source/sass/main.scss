@@ -39,6 +39,7 @@ html {
   @include span(1);
   padding-left: $gutter-width;
   padding-right: $gutter-width;
+  overflow: hidden;
 }
 
 body {

@@ -49,8 +49,7 @@ services:
 
 On the `guzzle.logger` service, the `callback` class is actually invalid, but without a class, it complains:
 
-> [Symfony\Component\DependencyInjection\Exception\RuntimeException]
-> Please add the class to service "guzzle.logger" even if it is constructed by a factory since we might need to add method calls based on compile-time checks.
+> [Symfony\Component\DependencyInjection\Exception\RuntimeException] Please add the class to service "guzzle.logger" even if it is constructed by a factory since we might need to add method calls based on compile-time checks.
 
 Nonetheless, when the dependencies are not public, Symfony compiles the Guzzle client service with a logger correctly.
 
