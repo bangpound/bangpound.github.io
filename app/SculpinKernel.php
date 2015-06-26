@@ -8,6 +8,7 @@ class SculpinKernel extends AbstractKernel
     {
         return array(
           'Bcremer\Sculpin\Bundle\CommonMarkBundle\SculpinCommonMarkBundle',
+          'Bangpound\Sculpin\Bundle\OEmbedBundle\SculpinOEmbedBundle',
         );
     }
 }

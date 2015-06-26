@@ -16,7 +16,8 @@
         }
     ],
     "require": {
-        "bcremer/sculpin-commonmark-bundle": "~0.2"
+        "bcremer/sculpin-commonmark-bundle": "~0.2",
+        "bangpound/sculpin-oembed-bundle": "~1.0@dev"
     },
     "scripts": {
         "sass:compile": [
