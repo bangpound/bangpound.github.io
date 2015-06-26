@@ -64,8 +64,10 @@ class appDevDebugProjectContainer extends Container
     protected function getGuzzleService()
     {
         $a = \GuzzleHttp\HandlerStack::create();
-        $a->push(\GuzzleHttp\Middleware::log($this->get('logger'),
-            new \GuzzleHttp\MessageFormatter()));
+        $a->push(\GuzzleHttp\Middleware::log(
+            $this->get('logger'),
+            new \GuzzleHttp\MessageFormatter()
+        ));
 
         return $this->services['guzzle'] = new \GuzzleHttp\Client(array(
             'stack' => $a
