@@ -3,7 +3,7 @@
     <title><![CDATA[!&amp;#]]></title>
     <link href="/blog/tags/Guzzle.xml" rel="self"/>
     <link href="/"/>
-    <updated>2015-06-26T14:25:01-05:00</updated>
+    <updated>2015-06-27T07:45:29-05:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -28,7 +28,7 @@ services:
         class: %guzzle.class%
         arguments:
             -
-                stack: @guzzle.stack
+                handler: @guzzle.stack
 
     guzzle.stack:
         public: false
@@ -71,7 +71,7 @@ class appDevDebugProjectContainer extends Container
         ));
 
         return $this-&gt;services['guzzle'] = new \GuzzleHttp\Client(array(
-            'stack' =&gt; $a
+            'handler' =&gt; $a
         ));
     }
 }
