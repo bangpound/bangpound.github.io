@@ -27,7 +27,7 @@ services:
         class: %guzzle.class%
         arguments:
             -
-                stack: @guzzle.stack
+                handler: @guzzle.stack
 
     guzzle.stack:
         public: false
@@ -69,7 +69,7 @@ class appDevDebugProjectContainer extends Container
         ));
 
         return $this->services['guzzle'] = new \GuzzleHttp\Client(array(
-            'stack' => $a
+            'handler' => $a
         ));
     }
 }
