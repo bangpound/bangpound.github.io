@@ -5,8 +5,13 @@
     "authors": [
     ],
     "require": {
+        "bangpound/oembed": "~0.0@dev",
+        "bangpound/sculpin-oembed-bundle": "~1.0@dev",
         "bcremer/sculpin-commonmark-bundle": "~0.2",
-        "bangpound/sculpin-oembed-bundle": "~1.0@dev"
+        "composer/composer": "~1.0@dev",
+        "dflydev/embedded-composer-console": "~1.0@dev",
+        "dflydev/embedded-composer-core": "~1.0@dev",
+        "sculpin/sculpin": "~2.0"
     },
     "scripts": {
         "sass:compile": [
