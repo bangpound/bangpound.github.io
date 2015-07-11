@@ -13,6 +13,9 @@
         "dflydev/embedded-composer-core": "~1.0@dev",
         "sculpin/sculpin": "~2.0"
     },
+    "config": {
+        "bin-dir": "bin"
+    },
     "scripts": {
         "sass:compile": [
             "sass -I bower_components/compass/core/stylesheets -I bower_components/susy/sass --update source/sass:source/css"
