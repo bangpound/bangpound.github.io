@@ -1,0 +1,43 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+    assetic.filter.scss.cache_location: %kernel.cache_dir%/assetic/scss
+    assetic.filter.scss.load_paths:
+        - %kernel.root_dir%/../bower_components/compass/core/stylesheets
+        - %kernel.root_dir%/../bower_components/susy/sass
+    assetic.filter.uglifyjs2.mangle: true
+    assetic.filter.uglifyjs2.compress: true
+
+services:
+    dump_assets_listener:
+        class: AppBundle\EventListener\DumpAssetsListener
+        arguments: [ @assetic.asset_manager, @sculpin_assetic.writer ]
+        tags:
+            - { name: kernel.event_listener, event: sculpin.core.after_run, method: onAfterRun }
+
+    sculpin_assetic.writer:
+        class: Assetic\AssetWriter
+        arguments: [ %sculpin.output_dir% ]
+        public: false
+
+    sculpin_assetic.resource:
+        class: Assetic\Factory\Resource\CoalescingDirectoryResource
+        arguments: [ [ @sculpin_assetic.resource.layouts, @sculpin_assetic.resource.views, @sculpin_assetic.resource.posts ] ]
+        public: false
+        tags:
+            - { name: assetic.formula_resource, loader: twig }
+
+    sculpin_assetic.resource.layouts:
+        class: Assetic\Factory\Resource\DirectoryResource
+        arguments: [ %sculpin.source_dir%/_layouts ]
+        public: false
+
+    sculpin_assetic.resource.views:
+        class: Assetic\Factory\Resource\DirectoryResource
+        arguments: [ %sculpin.source_dir%/_views ]
+        public: false
+
+    sculpin_assetic.resource.posts:
+        class: Assetic\Factory\Resource\DirectoryResource
+        arguments: [ %sculpin.source_dir%/_posts ]
+        public: false

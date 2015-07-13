@@ -4,9 +4,9 @@
     <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block head_meta %}
+{% block head_meta %}
     <meta name="robots" content="noindex, follow">
-    {% endblock %}
+{% endblock %}
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,11 +16,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" />
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
-    {% block head_styles %}
-    {% endblock %}
-    {% block head_scripts %}
-    {% endblock %}
+{% stylesheets "sass/main.scss" filter="scss" filter="cssrewrite" filter="?uglifycss" %}
+    <link rel="stylesheet" href="{{ asset_url }}">
+{% endstylesheets %}
+{% block head_styles %}
+{% endblock %}
+{% block head_scripts %}
+{% endblock %}
 </head>
 <body class="page__wrapper">
 <div class="page">
@@ -34,7 +36,7 @@
         </nav>
     </header>
     <main class="page__main">
-        {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+{% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
     </main>
     <footer class="page__footer">
         <p>&copy; {{ "now"|date("Y") }} Benjamin J Doherty</p>
@@ -57,7 +59,9 @@
 {% endif %}
 
 {% block scripts_after %}
-<script src="/js/prism.min.js"></script>
+{% javascripts "js/prism.js" filter="?uglifyjs2" %}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
 {% endblock %}
 </body>
 </html>

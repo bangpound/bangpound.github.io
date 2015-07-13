@@ -1,0 +1,7 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+console:
+    resource: "@CoreSphereConsoleBundle/Resources/config/routing.yml"
+    prefix: /_console
