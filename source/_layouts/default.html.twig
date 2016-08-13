@@ -16,9 +16,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" />
-{% stylesheets "sass/main.scss" filter="scss" filter="cssrewrite" filter="?uglifycss" %}
-    <link rel="stylesheet" href="{{ asset_url }}">
-{% endstylesheets %}
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
 {% block head_styles %}
 {% endblock %}
 {% block head_scripts %}
@@ -59,9 +57,7 @@
 {% endif %}
 
 {% block scripts_after %}
-{% javascripts "js/prism.js" filter="?uglifyjs2" %}
-<script src="{{ asset_url }}"></script>
-{% endjavascripts %}
+<script src="{{ site.url }}/js/prism.js"></script>
 {% endblock %}
 </body>
 </html>
