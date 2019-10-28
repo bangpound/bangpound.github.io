@@ -19,6 +19,13 @@ Familiar with social issues, nonprofit organizations, social services, children'
 
 Listed tools and skills are those where I have expert-level proficiency and up-to-date experience.
 
+* Python
+* AWS
+  1. EC2
+  1. RDS
+  1. Elasticache
+  1. Lambda
+  1. Codedeploy
 * PHP
   1. [Drupal](http://drupal.org)
   1. [Symfony](http://symfony.org) and [Silex](http://silex.sensiolabs.org)
@@ -39,6 +46,8 @@ Listed tools and skills are those where I have expert-level proficiency and up-t
   1. [Netbeans](https://netbeans.org)
   1. [PhpStorm](http://www.jetbrains.com/phpstorm/)
 * System administration, automation and virtualization
+  1. Chef
+  1. Terraform
   1. [Puppet](https://puppetlabs.com)
   1. [Vagrant](http://www.vagrantup.com)
   1. [Capistrano](http://capistranorb.com)
@@ -56,9 +65,21 @@ Listed tools and skills are those where I have expert-level proficiency and up-t
 
 ### Experience
 
+ActiveCampaign
+: *product engineer*
+  __January 2017-October 2017__
+  Led project to develop Salesforce integration for the ActiveCampaign product.
+: *site reliability engineer*
+  __October 2017-April 2019__
+  Led project to build a cloud-based staging environment for the ActiveCampaign product which required modernizing multiple production applications to follow the 12 Factor guidelines and deploying Consul for configuration management and Vault for secrets management, and modernizing deployments. Implemented SSO for AWS and LDAP for SSH for secure access to infrastructure for all ActiveCampaign engineers.
+: *staff site reliability engineer*
+  __April 2019-present__
+  Led transition of existing applications from Github to Gitlab.
+
+
 Caxy
 : *senior web developer and product owner*
-  __April 2014-present__
+  __April 2014-December 2016__
   Developed projects independently and as part of an agile (scrum) team. Major projects include [The Field Museum](https://www.fieldmuseum.org) and [The Stock Market Game](http://stockmarketgame.org) (static site, registration, and search). Accountable for pre-sales, planning, developer recruiting and continuing education.
 
 Self-employed
